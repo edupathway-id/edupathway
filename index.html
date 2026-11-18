@@ -160,7 +160,7 @@
     </div>
   </section>
 
-  <!-- PAKET BELAJAR (PRICING & CARDS) -->
+   <!-- PAKET BELAJAR (PRICING & CARDS) -->
   <section id="paket" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
     <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
       <h2 class="text-3xl sm:text-3xl font-bold text-brand-navy">PILIH PAKET BELAJAR KAMU</h2>
@@ -170,14 +170,12 @@
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
       
       <!-- PAKET 1: PLANNER ONLY -->
-      <div class="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+      <div class="paket-card opacity-0 translate-y-8 group bg-white rounded-3xl p-8 border border-gray-200 hover:border-brand-tealLight shadow-sm hover:shadow-xl flex flex-col justify-between transition-all duration-300 ease-out hover:-translate-y-2">
         <div>
-          <div class="h-44 bg-brand-navyLightest/50 rounded-2xl p-4 flex flex-col justify-center items-center border border-dashed border-brand-navyLighter/60 text-center mb-6">
-            <span class="text-xs subheading font-bold text-brand-navyLight uppercase tracking-wider mb-2">Google Sheets | Editable</span>
-            <h3 class="font-poppins font-bold text-lg text-brand-navy">Study Planner SNBT 2027</h3>
-            <p class="subheading text-xs text-gray-500 mt-1">3 Tabs | Auto Progress Tracker & Daily Checklist</p>
+          <div class="w-full aspect-square rounded-2xl overflow-hidden border border-brand-navyLighter/40 mb-6 bg-brand-navyLightest/30">
+            <img src="thumbnail/studyplan.png" alt="Study Planner SNBT 2027" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105">
           </div>
-          <h3 class="font-poppins font-bold text-xl text-brand-navy">Study Planner SNBT [Planner ONLY]</h3>
+          <h3 class="font-poppins font-bold text-xl text-brand-navy group-hover:text-brand-teal transition-colors">Study Planner SNBT [Planner ONLY]</h3>
           <p class="subheading text-xs text-gray-500 mt-1">Cocok untuk kamu yang ingin menyusun jadwal belajar mandiri secara terstruktur.</p>
           
           <ul class="mt-6 space-y-3 subheading text-sm text-brand-navy">
@@ -192,24 +190,22 @@
           <div class="mb-4">
             <span class="font-poppins font-bold text-2xl text-brand-navy">IDR 15.000</span>
           </div>
-          <button onclick="openModal('Study Planner SNBT [Planner ONLY]', 15000)" class="w-full bg-brand-navy hover:bg-brand-navyDark text-white font-poppins py-3.5 rounded-xl font-semibold transition">
+          <button onclick="openModal('Study Planner SNBT [Planner ONLY]', 15000)" class="w-full bg-brand-navy hover:bg-brand-navyDark active:scale-95 text-white font-poppins py-3.5 rounded-xl font-semibold transition-all duration-200">
             Beli Sekarang
           </button>
         </div>
       </div>
 
       <!-- PAKET 2: PAKET LENGKAP (BEST SELLER) -->
-      <div class="bg-white rounded-3xl p-8 border-2 border-brand-teal shadow-xl flex flex-col justify-between relative transform lg:-translate-y-2">
-        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-teal text-white font-poppins text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">
+      <div style="transition-delay: 150ms;" class="paket-card opacity-0 translate-y-8 group bg-white rounded-3xl p-8 border-2 border-brand-teal shadow-xl hover:shadow-2xl flex flex-col justify-between relative transform lg:-translate-y-2 transition-all duration-300 ease-out hover:-translate-y-4">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-teal text-white font-poppins text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md animate-pulse">
           🔥 PALING HEMAT
         </div>
         <div>
-          <div class="h-44 bg-brand-tealLightest rounded-2xl p-4 flex flex-col justify-center items-center border border-brand-tealLighter text-center mb-6">
-            <span class="text-xs subheading font-bold text-brand-tealDark uppercase tracking-wider mb-2">Google Sheets + Paket PDF</span>
-            <h3 class="font-poppins font-bold text-lg text-brand-navy">Paket Lengkap SNBT</h3>
-            <p class="subheading text-xs text-brand-tealDark mt-1">Study Planner + Rangkuman & Latihan Soal PDF</p>
+          <div class="w-full aspect-square rounded-2xl overflow-hidden border border-brand-tealLighter mb-6 bg-brand-tealLightest/40">
+            <img src="thumbnail/all-in.png" alt="Paket Lengkap SNBT Study Planner + Bank Soal" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105">
           </div>
-          <h3 class="font-poppins font-bold text-xl text-brand-navy">Paket Lengkap SNBT – Study Planner + Bank Soal</h3>
+          <h3 class="font-poppins font-bold text-xl text-brand-navy group-hover:text-brand-teal transition-colors">Paket Lengkap SNBT – Study Planner + Bank Soal</h3>
           <p class="subheading text-xs text-gray-500 mt-1">Cocok untuk kamu yang ingin persiapan UTBK lebih terarah dengan jadwal belajar terstruktur sekaligus akses ke bank soal dan pembahasan dalam satu paket.</p>
 
           <ul class="mt-6 space-y-3 subheading text-sm text-brand-navy">
@@ -225,27 +221,25 @@
             <span class="font-poppins font-bold text-2xl text-brand-teal">IDR 25.000</span>
             <span class="line-through text-gray-400 text-sm font-semibold">IDR 30.000</span>
           </div>
-          <button onclick="openModal('Paket Lengkap SNBT – Study Planner + Bank Soal', 25000)" class="w-full bg-brand-teal hover:bg-brand-tealDark text-white font-poppins py-3.5 rounded-xl font-semibold shadow-lg transition">
+          <button onclick="openModal('Paket Lengkap SNBT – Study Planner + Bank Soal', 25000)" class="w-full bg-brand-teal hover:bg-brand-tealDark active:scale-95 text-white font-poppins py-3.5 rounded-xl font-semibold shadow-lg transition-all duration-200">
             Beli Sekarang
           </button>
         </div>
       </div>
 
       <!-- PAKET 3: SOAL & RANGKUMAN ONLY -->
-      <div class="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+      <div style="transition-delay: 300ms;" class="paket-card opacity-0 translate-y-8 group bg-white rounded-3xl p-8 border border-gray-200 hover:border-brand-tealLight shadow-sm hover:shadow-xl flex flex-col justify-between transition-all duration-300 ease-out hover:-translate-y-2">
         <div>
-          <div class="h-44 bg-brand-navyLightest/50 rounded-2xl p-4 flex flex-col justify-center items-center border border-dashed border-brand-navyLighter/60 text-center mb-6">
-            <span class="text-xs subheading font-bold text-brand-navyLight uppercase tracking-wider mb-2">Bundle File PDF</span>
-            <h3 class="font-poppins font-bold text-lg text-brand-navy">Bank Soal & Rangkuman</h3>
-            <p class="subheading text-xs text-gray-500 mt-1">SNBT Lengkap Pembahasan</p>
+          <div class="w-full aspect-square rounded-2xl overflow-hidden border border-brand-navyLighter/40 mb-6 bg-brand-navyLightest/30">
+            <img src="thumbnail/banksoal1.png" alt="Latihan Soal & Pembahasan - SNBT" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105">
           </div>
-          <h3 class="font-poppins font-bold text-xl text-brand-navy"> Latihan Soal & Pembahasan - SNBT </h3>
+          <h3 class="font-poppins font-bold text-xl text-brand-navy group-hover:text-brand-teal transition-colors">Latihan Soal & Pembahasan - SNBT</h3>
           <p class="subheading text-xs text-gray-500 mt-1">Khusus bagi kamu yang butuh amunisi soal & rangkuman pdf saja.</p>
           
           <ul class="mt-6 space-y-3 subheading text-sm text-brand-navy">
-            <li class="flex items-center gap-2">✅ <span>Bank Soal TPS (PU, PBM, PPU, PK) + Pembahasan </span></li>
+            <li class="flex items-center gap-2">✅ <span>Bank Soal TPS (PU, PBM, PPU, PK) + Pembahasan</span></li>
             <li class="flex items-center gap-2">✅ <span>Bank Soal Literasi Bahasa Indonesia & Inggris + Pembahasan</span></li>
-            <li class="flex items-center gap-2">✅ <span>Bank Soal Penalaran Matematika + Pembahasan </span></li>
+            <li class="flex items-center gap-2">✅ <span>Bank Soal Penalaran Matematika + Pembahasan</span></li>
           </ul>
         </div>
         
@@ -253,12 +247,11 @@
           <div class="mb-4">
             <span class="font-poppins font-bold text-2xl text-brand-navy">IDR 15.000</span>
           </div>
-          <button onclick="openModal('Rangkuman & Latihan Soal - SNBT', 15000)" class="w-full bg-brand-navy hover:bg-brand-navyDark text-white font-poppins py-3.5 rounded-xl font-semibold transition">
+          <button onclick="openModal('Rangkuman & Latihan Soal - SNBT', 15000)" class="w-full bg-brand-navy hover:bg-brand-navyDark active:scale-95 text-white font-poppins py-3.5 rounded-xl font-semibold transition-all duration-200">
             Beli Sekarang
           </button>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -286,7 +279,7 @@
         <div class="p-5 bg-brand-bgWarm rounded-2xl border border-gray-200">
           <div class="w-8 h-8 rounded-full bg-brand-teal text-white font-bold flex items-center justify-center font-poppins mb-3">4</div>
           <h4 class="font-poppins font-bold text-brand-navy text-sm">Terima Link Belajar</h4>
-          <p class="subheading text-xs text-gray-600 mt-1">Setelah pembayaran terkonfirmasi, Admin mengirimkan link Study Planner & PDF ke Email kamu.</p>
+          <p class="subheading text-xs text-gray-600 mt-1">Setelah pembayaran terkonfirmasi, Admin mengirimkan link Study Planner & PDF ke Email/WA kamu.</p>
         </div>
       </div>
     </div>
@@ -308,7 +301,7 @@
         </details>
         <details class="bg-white p-5 rounded-2xl border border-gray-200 cursor-pointer">
           <summary class="font-poppins font-semibold text-brand-navy text-sm">Berapa lama proses pengiriman link setelah bayar?</summary>
-          <p class="subheading text-xs text-gray-600 mt-3 leading-relaxed">Akses EduPathway akan dikirimkan melalui email maksimal 1 × 24 jam setelah pembayaran berhasil dikonfirmasi. Pastikan kamu mengisi alamat email dengan benar agar akses dapat diterima tanpa kendala.</p>
+          <p class="subheading text-xs text-gray-600 mt-3 leading-relaxed">Cukup isi data pemesanan pada pop-up, lalu klik tombol lanjut pembayaran. Kamu akan otomatis diarahkan ke WhatsApp Admin EduPathway beserta detail pesananmu untuk mendapatkan instruksi pembayaran.</p>
         </details>
       </div>
     </div>
@@ -455,8 +448,26 @@ Mohon informasi metode pembayarannya ya kak. Terima kasih!`;
       window.open(waUrl, '_blank');
       closeModal();
     }
+
+    // Animasi muncul bertahap saat bagian #paket terlihat di layar
+    document.addEventListener("DOMContentLoaded", () => {
+      const cards = document.querySelectorAll('.paket-card');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove('opacity-0', 'translate-y-8');
+            // Hapus delay setelah animasi masuk selesai agar hover tetap instan
+            setTimeout(() => {
+              entry.target.style.transitionDelay = '0ms';
+            }, 600);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      cards.forEach(card => observer.observe(card));
+    });
+
   </script>
-
-
 </body>
 </html>

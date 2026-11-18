@@ -160,9 +160,14 @@
     </div>
   </section>
 
-   <!-- PAKET BELAJAR (PRICING & CARDS) -->
+ <!-- PAKET BELAJAR (PRICING & CARDS) -->
   <section id="paket" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
     <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+      <!-- Badge Pengumuman Promo Launching -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100 border border-amber-300 text-amber-900 font-poppins text-xs font-bold mb-2">
+        <span>🎉 PROMO LAUNCHING! Harga Spesial Berlaku s.d. 22 November 2026</span>
+      </div>
+      
       <h2 class="text-3xl sm:text-3xl font-bold text-brand-navy">PILIH PAKET BELAJAR KAMU</h2>
       <p class="subheading text-brand-navyLight text-base">Investasi terbaik untuk masa depan perguruan tinggi impianmu.</p>
     </div>
@@ -173,24 +178,28 @@
       <div class="paket-card opacity-0 translate-y-8 group bg-white rounded-3xl p-8 border border-gray-200 hover:border-brand-tealLight shadow-sm hover:shadow-xl flex flex-col justify-between transition-all duration-300 ease-out hover:-translate-y-2">
         <div>
           <div class="w-full aspect-square rounded-2xl overflow-hidden border border-brand-navyLighter/40 mb-6 bg-brand-navyLightest/30">
-            <img src="thumbnail/studyplan.png" alt="Study Planner SNBT 2027" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105">
+            <img src="studyplan.jpg" alt="Study Planner SNBT 2027" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105">
           </div>
-          <h3 class="font-poppins font-bold text-xl text-brand-navy group-hover:text-brand-teal transition-colors">Study Planner UTBK-SNBT [Planner ONLY]</h3>
+          <h3 class="font-poppins font-bold text-xl text-brand-navy group-hover:text-brand-teal transition-colors">Study Planner SNBT [Planner ONLY]</h3>
           <p class="subheading text-xs text-gray-500 mt-1">Cocok untuk kamu yang ingin menyusun jadwal belajar mandiri secara terstruktur.</p>
           
           <ul class="mt-6 space-y-3 subheading text-sm text-brand-navy">
             <li class="flex items-center gap-2">✅ <span>Template Google Sheets (Editable)</span></li>
             <li class="flex items-center gap-2">✅ <span>List Materi SNBT Lengkap</span></li>
             <li class="flex items-center gap-2">✅ <span>Countdown H-UTBK & Target Skor</span></li>
-            <li class="flex items-center gap-2">✅ <span>Progress Tracker Diagram</span></li>
+            <li class="flex items-center gap-2">✅ <span>Progress Tracker </span></li>
           </ul>
         </div>
         
         <div class="mt-8 pt-6 border-t border-gray-100">
-          <div class="mb-4">
-            <span class="font-poppins font-bold text-2xl text-brand-navy">IDR 15.000</span>
+          <div class="mb-1">
+            <span class="promo-badge inline-block text-[11px] font-poppins font-bold bg-amber-100 text-amber-800 px-2.5 py-0.5 rounded-md">Harga Launching</span>
           </div>
-          <button onclick="openModal('Study Planner SNBT [Planner ONLY]', 15000)" class="w-full bg-brand-navy hover:bg-brand-navyDark active:scale-95 text-white font-poppins py-3.5 rounded-xl font-semibold transition-all duration-200">
+          <div class="mb-4 flex items-baseline gap-2.5">
+            <span id="price-display-planner" class="font-poppins font-bold text-2xl text-brand-navy">IDR 10.000</span>
+            <span id="price-strike-planner" class="line-through text-gray-400 text-sm font-semibold">IDR 15.000</span>
+          </div>
+          <button onclick="selectPackage('planner')" class="w-full bg-brand-navy hover:bg-brand-navyDark active:scale-95 text-white font-poppins py-3.5 rounded-xl font-semibold transition-all duration-200">
             Beli Sekarang
           </button>
         </div>
@@ -203,10 +212,10 @@
         </div>
         <div>
           <div class="w-full aspect-square rounded-2xl overflow-hidden border border-brand-tealLighter mb-6 bg-brand-tealLightest/40">
-            <img src="thumbnail/all-in.png" alt="Paket Lengkap SNBT Study Planner + Bank Soal" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105">
+            <img src="all-in.jpg" alt="Paket Lengkap SNBT – Study Planner + Bank Soal" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105">
           </div>
-          <h3 class="font-poppins font-bold text-xl text-brand-navy group-hover:text-brand-teal transition-colors">Paket Lengkap UTBK-SNBT Study Planner + Bank Soal</h3>
-          <p class="subheading text-xs text-gray-500 mt-1">Cocok untuk kamu yang ingin persiapan UTBK-SNBT lebih terarah dengan jadwal belajar terstruktur sekaligus akses ke bank soal dan pembahasan dalam satu paket.</p>
+          <h3 class="font-poppins font-bold text-xl text-brand-navy group-hover:text-brand-teal transition-colors">Paket Lengkap SNBT – Study Planner + Bank Soal</h3>
+          <p class="subheading text-xs text-gray-500 mt-1">Cocok untuk kamu yang ingin persiapan UTBK lebih terarah dengan jadwal belajar terstruktur sekaligus akses ke bank soal dan pembahasan dalam satu paket.</p>
 
           <ul class="mt-6 space-y-3 subheading text-sm text-brand-navy">
             <li class="flex items-center gap-2">✅ <strong>Semua Fitur Interactive Study Planner</strong></li>
@@ -217,11 +226,14 @@
         </div>
         
         <div class="mt-8 pt-6 border-t border-gray-100">
-          <div class="mb-4 flex items-baseline gap-3">
-            <span class="font-poppins font-bold text-2xl text-brand-teal">IDR 25.000</span>
-            <span class="line-through text-gray-400 text-sm font-semibold">IDR 30.000</span>
+          <div class="mb-1">
+            <span class="promo-badge inline-block text-[11px] font-poppins font-bold bg-amber-100 text-amber-800 px-2.5 py-0.5 rounded-md">Harga Launching</span>
           </div>
-          <button onclick="openModal('Paket Lengkap SNBT – Study Planner + Bank Soal', 25000)" class="w-full bg-brand-teal hover:bg-brand-tealDark active:scale-95 text-white font-poppins py-3.5 rounded-xl font-semibold shadow-lg transition-all duration-200">
+          <div class="mb-4 flex items-baseline gap-2.5">
+            <span id="price-display-lengkap" class="font-poppins font-bold text-2xl text-brand-teal">IDR 20.000</span>
+            <span id="price-strike-lengkap" class="line-through text-gray-400 text-sm font-semibold">IDR 25.000</span>
+          </div>
+          <button onclick="selectPackage('lengkap')" class="w-full bg-brand-teal hover:bg-brand-tealDark active:scale-95 text-white font-poppins py-3.5 rounded-xl font-semibold shadow-lg transition-all duration-200">
             Beli Sekarang
           </button>
         </div>
@@ -231,9 +243,9 @@
       <div style="transition-delay: 300ms;" class="paket-card opacity-0 translate-y-8 group bg-white rounded-3xl p-8 border border-gray-200 hover:border-brand-tealLight shadow-sm hover:shadow-xl flex flex-col justify-between transition-all duration-300 ease-out hover:-translate-y-2">
         <div>
           <div class="w-full aspect-square rounded-2xl overflow-hidden border border-brand-navyLighter/40 mb-6 bg-brand-navyLightest/30">
-            <img src="thumbnail/banksoal1.png" alt="Latihan Soal & Pembahasan - SNBT" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105">
+            <img src="banksoal.jpg" alt="Latihan Soal & Pembahasan - SNBT" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105">
           </div>
-          <h3 class="font-poppins font-bold text-xl text-brand-navy group-hover:text-brand-teal transition-colors">Latihan Soal & Pembahasan UTBK-SNBT </h3>
+          <h3 class="font-poppins font-bold text-xl text-brand-navy group-hover:text-brand-teal transition-colors">Latihan Soal & Pembahasan - SNBT</h3>
           <p class="subheading text-xs text-gray-500 mt-1">Khusus bagi kamu yang butuh amunisi soal & rangkuman pdf saja.</p>
           
           <ul class="mt-6 space-y-3 subheading text-sm text-brand-navy">
@@ -244,14 +256,19 @@
         </div>
         
         <div class="mt-8 pt-6 border-t border-gray-100">
-          <div class="mb-4">
-            <span class="font-poppins font-bold text-2xl text-brand-navy">IDR 15.000</span>
+          <div class="mb-1">
+            <span class="promo-badge inline-block text-[11px] font-poppins font-bold bg-amber-100 text-amber-800 px-2.5 py-0.5 rounded-md">Harga Launching</span>
           </div>
-          <button onclick="openModal('Rangkuman & Latihan Soal - SNBT', 15000)" class="w-full bg-brand-navy hover:bg-brand-navyDark active:scale-95 text-white font-poppins py-3.5 rounded-xl font-semibold transition-all duration-200">
+          <div class="mb-4 flex items-baseline gap-2.5">
+            <span id="price-display-banksoal" class="font-poppins font-bold text-2xl text-brand-navy">IDR 10.000</span>
+            <span id="price-strike-banksoal" class="line-through text-gray-400 text-sm font-semibold">IDR 15.000</span>
+          </div>
+          <button onclick="selectPackage('banksoal')" class="w-full bg-brand-navy hover:bg-brand-navyDark active:scale-95 text-white font-poppins py-3.5 rounded-xl font-semibold transition-all duration-200">
             Beli Sekarang
           </button>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -407,6 +424,80 @@
     // GANTI NOMOR WHATSAPP ADMIN DI BAWAH INI (Gunakan format 628xxx tanpa tanda + atau spasi)
     const ADMIN_WA_NUMBER = '6281223601607';
 
+   // BATAS AKHIR PROMO: 22 November 2026 pukul 23:59:59 WIB
+    const PROMO_END_DATE = new Date('2026-11-22T23:59:59+07:00');
+    const isPromoActive = new Date() <= PROMO_END_DATE;
+
+    // PUSAT PENGATURAN HARGA (Cukup edit angka di sini jika ingin ubah harga)
+    const PACKAGES = {
+      planner: {
+        name: 'Study Planner SNBT [Planner ONLY]',
+        promoPrice: 10000,
+        normalPrice: 15000
+      },
+      lengkap: {
+        name: 'Paket Lengkap SNBT – Study Planner + Bank Soal',
+        promoPrice: 20000,
+        normalPrice: 25000
+      },
+      banksoal: {
+        name: 'Latihan Soal & Pembahasan - SNBT',
+        promoPrice: 10000,
+        normalPrice: 15000
+      }
+    };
+
+    // Terapkan harga saat halaman dibuka
+    document.addEventListener("DOMContentLoaded", () => {
+      Object.keys(PACKAGES).forEach(key => {
+        const pkg = PACKAGES[key];
+        const activePrice = isPromoActive ? pkg.promoPrice : pkg.normalPrice;
+        
+        const displayEl = document.getElementById(`price-display-${key}`);
+        const strikeEl = document.getElementById(`price-strike-${key}`);
+
+        if (displayEl) {
+          displayEl.innerText = 'IDR ' + activePrice.toLocaleString('id-ID');
+        }
+        if (strikeEl) {
+          if (isPromoActive) {
+            strikeEl.innerText = 'IDR ' + pkg.normalPrice.toLocaleString('id-ID');
+          } else {
+            strikeEl.style.display = 'none';
+          }
+        }
+      });
+
+      // Sembunyikan badge promo jika periode promo sudah berakhir
+      if (!isPromoActive) {
+        document.querySelectorAll('.promo-badge').forEach(badge => {
+          badge.style.display = 'none';
+        });
+      }
+
+      // Animasi muncul bertahap saat bagian #paket terlihat di layar
+      const cards = document.querySelectorAll('.paket-card');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove('opacity-0', 'translate-y-8');
+            setTimeout(() => {
+              entry.target.style.transitionDelay = '0ms';
+            }, 600);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      cards.forEach(card => observer.observe(card));
+    });
+
+    function selectPackage(packageKey) {
+      const pkg = PACKAGES[packageKey];
+      const activePrice = isPromoActive ? pkg.promoPrice : pkg.normalPrice;
+      openModal(pkg.name, activePrice);
+    }
+
     function openModal(packageName, price) {
       selectedPackage = packageName;
       selectedPrice = price;
@@ -427,18 +518,19 @@
       const phone = document.getElementById('buyerPhone').value.trim();
       const email = document.getElementById('buyerEmail').value.trim();
       const formattedPrice = 'IDR ' + selectedPrice.toLocaleString('id-ID');
+      const promoNote = isPromoActive ? ' (Promo Launching)' : '';
 
       const message = 
 `Halo Admin EduPathway! Saya ingin memesan paket belajar UTBK:
 
 *Detail Pesanan:*
-• Paket: ${selectedPackage}
-• Harga: ${formattedPrice}
+- Paket: ${selectedPackage}
+- Harga: ${formattedPrice}${promoNote}
 
 *Data Pemesan:*
-• Nama: ${name}
-• No. Telepon/WA: ${phone}
-• Email: ${email}
+- Nama: ${name}
+- No. Telepon/WA: ${phone}
+- Email: ${email}
 
 Mohon informasi metode pembayarannya ya kak. Terima kasih!`;
 
